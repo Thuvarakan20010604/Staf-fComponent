@@ -1,8 +1,9 @@
 import EditDetailsFrom from '@/components/EditDetailsFrom';
 import React from 'react';
-
+import Navbar from '@/components/Navbar';
 const getStaffDetails = async (id: any) => {
   try {
+
     const res = await fetch(`http://localhost:3000/api/${id}`, {
       cache: "no-store",
     });
@@ -33,6 +34,8 @@ async function EditDetails({ params }: any) {
 
   return (
     <div>
+      <Navbar/>
+      <br/>
       <EditDetailsFrom
         id={id}
         name={name}
