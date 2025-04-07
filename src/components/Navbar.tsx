@@ -6,8 +6,8 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <div className="bg-white text-white py-4 shadow-md">
-      <nav className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between px-6 py-4 bg-black shadow-md rounded-lg">
+    <div className="bg-gray-900 text-white py-4 shadow-md">
+      <nav className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between px-15 py-4 bg-black shadow-md rounded-lg">
         {/* Title */}
         <h1 className="text-3xl font-bold text-gray-200">Staff Details</h1>
 
